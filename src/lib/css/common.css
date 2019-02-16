@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, Arial, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.wp100 {
+  width: 100%;
+}
+
+.hand-animate {
+  animation-name: hand;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform: translateY(0);
+  position: absolute;
+  width: .6rem;
+  top: 3.5rem;
+  left: 2.5rem
+}
+.scale-big {
+  animation-name: big;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+@-webkit-keyframes big {
+  0% {
+    transform: scale(0)
+  }
+  80% {
+    transform: scale(1.1)
+  }
+  95% {
+    transform: scale(.95)
+  }
+  100% {
+    transform: scale(1)
+  }
+}
+@-webkit-keyframes hand {
+    0% {
+      top: 3.5rem;
+      opacity: 1
+    }
+    100% {
+      top: 1.5rem;
+      opacity: .3
+    }
+}
+input::-webkit-input-placeholder {
+  /* placeholder颜色  */
+  color: #e38786;
+  /* placeholder字体大小  */
+  font-size: .12rem;
+}
+
+.cai-name::-webkit-input-placeholder {
+  /* placeholder颜色  */
+  color: #fb0;
+  /* placeholder字体大小  */
+  font-size: .05rem;
+  line-height: .07rem
+}
+
+img.food-name-1 {
+  width: .4rem !important;
+}
+
+img.food-name-5 {
+  width: .5rem !important;
+}
+
+img.food-name-2 {
+    width: .5rem !important;
+}
+img.food-pic-7 {
+  position: absolute !important;
+  width: 0.8rem !important;
+  top: 0.077rem !important;
+  height: 0.67rem !important;
+  right: 0.332rem !important;
+}
+img.food-pic-5 {
+  position: absolute !important;
+  width: 0.765rem !important;
+  top: 0.08rem !important;
+  height: 0.645rem !important;
+  left: 0.348rem !important;
+}
+img.food-pic-8 {
+    top: .063rem !important;
+    right: .325rem !important;
+    width: 0.815rem !important;
+    height: 0.69rem !important;
+}
+img.food-pic-1 {
+  top: .057rem !important;
+  right: .33rem !important;
+  width: 0.8rem !important;
+  height: 0.68rem !important;
+}
+img.food-pic-10 {
+  top: .042rem !important;
+  left: 0.326rem !important;
+  width: 0.82rem !important;
+  height: 0.7rem !important;
+}
+.am-toast-notice {
+  transform: scale(1.2)
+}

@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
+import addVconsole from "utils/addvconsole";
 
 class Root extends Component {
   constructor(props) {
     super(props)
   }
-  componentDidMount() {}
+  componentDidMount() {
+    addVconsole(); //唤起控制台
+  }
 
   render() {
     const { children } = this.props

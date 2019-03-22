@@ -2,8 +2,11 @@ const {
   override,
   fixBabelImports,
   addLessLoader,
+  addWebpackAlias,
+  addPostcssPlugins,
 } = require("customize-cra");
 
+const { resolve } = require('path')
 
 module.exports = override(
   fixBabelImports("antd-mobile-import", {
@@ -23,9 +26,12 @@ module.exports = override(
     "config": resolve(__dirname, 'src/lib/config'),
     "img": resolve(__dirname, 'src/lib/img'),
     "component": resolve(__dirname, 'src/lib/component'),
+    "utils": resolve(__dirname, 'src/lib/utils'),
   }),
   addLessLoader({
-    ident: 'postcss',
     javascriptEnabled: true
   }),
+  addPostcssPlugins([
+    require('postcss-pxtorem')({ rootValue: 100, propWhiteList: [] })
+  ]),
 );

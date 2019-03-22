@@ -4,4 +4,10 @@
 }
 .layout {
   height: 100%;
+  overflow: scroll;
+}
+
+.ant-layout-content {
+  flex: none;
+  height: auto
 }

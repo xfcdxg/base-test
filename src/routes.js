@@ -6,6 +6,7 @@ import Root from "./root";
 
 import AdminLayout from "./admin/layout";
 import Admin from "./admin";
+import AdminLogin from "admin/login"
 
 // 路由配置
 const Routes = () => (
@@ -16,6 +17,7 @@ const Routes = () => (
     <Route path="/admin" component={AdminLayout}>
       <IndexRoute component={Admin} />
     </Route>
+    <Route path="/admin/login" component={ AdminLogin } />
   </Router>
 );
 export default Routes;

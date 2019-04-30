@@ -20,6 +20,7 @@ const addVconsole = alwaysShow => {
       } else {
         const V = require('vconsole')
         const v = new V()
+        console.log(v)
       }
     }
     if (vTimer) {

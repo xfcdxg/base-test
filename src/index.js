@@ -5,9 +5,9 @@ import { setServerUrl } from 'mulan-lib'
 import Routes from './routes'
 import './lib/css/normalize.css'
 import './lib/css/common.css'
+import { baseApiUrl } from 'config'
 
-setServerUrl('https://openapi.adleading.com/fa')
-// setServerUrl('https://my9md.adleading.com/fa')
+setServerUrl(baseApiUrl)
 
 ReactDOM.render(<Routes />, document.getElementById('root'));
 

@@ -4,6 +4,7 @@ import addVconsole from "utils/addvconsole";
 class Root extends Component {
   constructor(props) {
     super(props)
+    this.state = {}
   }
   componentDidMount() {
     addVconsole(); //唤起控制台

@@ -9,7 +9,7 @@
 ## 创建项目
 
 ```bash
-  git clone git@gitee.com:xfcdxg/react-base.git ./MyFloder/
+  git clone https://gitee.com/xfcdxg/react-base.git ./MyFloder/
 
   cd ./MyFloder
 
@@ -29,7 +29,7 @@
 ```bash
   project=base-test; # 项目名，需修改
   repoDomain=git@gitee.com:xfcdxg; #如不是gitee，可更换，如github
-  git clone git@gitee.com:xfcdxg/react-base.git ./$project/;
+  git clone https://gitee.com/xfcdxg/react-base.git ./$project/;
   cd ./$project;
   git remote set-url origin $repoDomain/$project.git;
   git pull --allow-unrelated-histories;
